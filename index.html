@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parcial Interactivo: Mecanismos de Reparación del ADN</title>
+    <style>
+        :root {
+            --bg-color: #121212;
+            --card-bg: #1e1e1e;
+            --text-color: #e0e0e0;
+            --text-muted: #aaa;
+            --primary: #3b82f6;
+            --primary-hover: #2563eb;
+            --success: #22c55e;
+            --error: #ef4444;
+            --border: #333;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+            border: 1px solid var(--border);
+        }
+
+        h1 {
+            text-align: center;
+            color: #60a5fa;
+            margin-bottom: 5px;
+        }
+
+        .subtitle {
+            text-align: center;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-bottom: 30px;
+        }
+
+        .question-card {
+            background: #252526;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+
+        .question-title {
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+        }
+
+        .options label {
+            display: block;
+            background: #2d2d2d;
+            padding: 10px 15px;
+            border-radius: 6px;
+            margin-bottom: 8px;
+            cursor: pointer;
+            border: 1px solid transparent;
+            transition: all 0.2s;
+        }
+
+        .options label:hover {
+            background: #37373d;
+            border-color: var(--primary);
+        }
+
+        .options input {
+            margin-right: 10px;
+        }
+
+        .btn {
+            display: block;
+            width: 100%;
+            background: var(--primary);
+            color: white;
+            border: none;
+            padding: 12px;
+            font-size: 1rem;
+            font-weight: bold;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: background 0.2s;
+            margin-top: 20px;
+        }
+
+        .btn:hover {
+            background: var(--primary-hover);
+        }
+
+        #results {
+            display: none;
+            margin-top: 30px;
+            text-align: center;
+            background: #252526;
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid var(--border);
+        }
+
+        .feedback {
+            font-size: 0.9rem;
+            margin-top: 8px;
+            padding: 8px;
+            border-radius: 4px;
+            display: none;
+        }
+
+        .correct-feedback {
+            background: rgba(34, 197, 94, 0.1);
+            color: var(--success);
+            border: 1px solid rgba(34, 197, 94, 0.3);
+        }
+
+        .incorrect-feedback {
+            background: rgba(239, 68, 68, 0.1);
+            color: var(--error);
+            border: 1px solid rgba(239, 68, 68, 0.3);
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Simulacro Parcial: Reparación del ADN</h1>
+    <div class="subtitle">Basado en Tafurt Cardona Y. & Marín Morales M.A. (Revista Biosalud 2014)[cite: 1]</div>
+
+    <form id="quizForm">
+        
+        <!-- Pregunta 1 -->
+        <div class="question-card">
+            <div class="question-title">1. ¿Qué mecanismo de reparación directa revierte dímeros de pirimidina inducidos por luz UV y se caracteriza por no existir en mamíferos placentarios[cite: 1]?</div>
+            <div class="options">
+                <label><input type="radio" name="p1" value="a"> A) Alquiltransferencia[cite: 1]</label>
+                <label><input type="radio" name="p1" value="b"> B) Fotorreactivación[cite: 1]</label>
+                <label><input type="radio" name="p1" value="c"> C) Desmetilación oxidativa[cite: 1]</label>
+                <label><input type="radio" name="p1" value="d"> D) NER (Escisión de nucleótidos)[cite: 1]</label>
+            </div>
+            <div id="fb-p1" class="feedback"></div>
+        </div>
+
+        <!-- Pregunta 2 -->
+        <div class="question-card">
+            <div class="question-title">2. ¿Cuál enzima actúa como enzima "suicida" (MGMT), transfiriendo el grupo metilo de la O⁶-metilguanina a una cisteína para inactivarse[cite: 1]?</div>
+            <div class="options">
+                <label><input type="radio" name="p2" value="a"> A) Fotoliasa[cite: 1]</label>
+                <label><input type="radio" name="p2" value="b"> B) Alquiltransferencia[cite: 1]</label>
+                <label><input type="radio" name="p2" value="c"> C) Glicosilasa[cite: 1]</label>
+                <label><input type="radio" name="p2" value="d"> D) Ligasa IV[cite: 1]</label>
+            </div>
+            <div id="fb-p2" class="feedback"></div>
+        </div>
+
+        <!-- Pregunta 3 -->
+        <div class="question-card">
+            <div class="question-title">3. ¿Qué vía de reparación indirecta elimina una sola base dañada mediante una glicosilasa y genera sitios AP (apirimidínicos/apurínicos)[cite: 1]?</div>
+            <div class="options">
+                <label><input type="radio" name="p3" value="a"> A) MMR[cite: 1]</label>
+                <label><input type="radio" name="p3" value="b"> C) NER[cite: 1]</label>
+                <label><input type="radio" name="p3" value="c"> C) BER (Escisión de bases)[cite: 1]</label>
+                <label><input type="radio" name="p3" value="d"> D) NHEJ[cite: 1]</label>
+            </div>
+            <div id="fb-p3" class="feedback"></div>
+        </div>
+
+        <!-- Pregunta 4 -->
+        <div class="question-card">
+            <div class="question-title">4. La deficiencia o fallas en el sistema NER (Escisión de nucleótidos) están clásicamente asociadas con patologías como[cite: 1]:</div>
+            <div class="options">
+                <label><input type="radio" name="p4" value="a"> A) Ataxia-telangiectasia[cite: 1]</label>
+                <label><input type="radio" name="p4" value="b"> B) Xeroderma pigmentoso y síndrome de Cockayne[cite: 1]</label>
+                <label><input type="radio" name="p4" value="c"> C) Anemia de Fanconi[cite: 1]</label>
+                <label><input type="radio" name="p4" value="d"> D) Fibrosis quística</label>
+            </div>
+            <div id="fb-p4" class="feedback"></div>
+        </div>
+
+        <!-- Pregunta 5 -->
+        <div class="question-card">
+            <div class="question-title">5. ¿Qué mecanismo corrige bases desapareadas en la hebra recién sintetizada aumentando la fidelidad de replicación entre 20 y 400 veces[cite: 1]?</div>
+            <div class="options">
+                <label><input type="radio" name="p5" value="a"> A) MMR (Apareamiento erróneo)[cite: 1]</label>
+                <label><input type="radio" name="p5" value="b"> B) Respuesta SOS[cite: 1]</label>
+                <label><input type="radio" name="p5" value="c"> C) HR (Recombinación homóloga)[cite: 1]</label>
+                <label><input type="radio" name="p5" value="d"> D) BER[cite: 1]</label>
+            </div>
+            <div id="fb-p5" class="feedback"></div>
+        </div>
+
+        <!-- Pregunta 6 -->
+        <div class="question-card">
+            <div class="question-title">6. Respecto a los quiebres en doble cadena (DSB), ¿cuál afirmación es correcta sobre la Recombinación Homóloga (HR)[cite: 1]?</div>
+            <div class="options">
+                <label><input type="radio" name="p6" value="a"> A) Es propensa a errores y une extremos directamente sin molde[cite: 1]</label>
+                <label><input type="radio" name="p6" value="b"> B) Es libre de errores, usa la cromátida hermana como molde y actúa sobre todo en fase G₂[cite: 1]</label>
+                <label><input type="radio" name="p6" value="c"> C) Ocurre exclusivamente en procariotas mediante proteínas RecA[cite: 1]</label>
+                <label><input type="radio" name="p6" value="d"> D) No requiere la proteína RAD51[cite: 1]</label>
+            </div>
+            <div id="fb-p6" class="feedback"></div>
+        </div>
+
+        <!-- Pregunta 7 -->
+        <div class="question-card">
+            <div class="question-title">7. ¿Cuál es el rol principal del sistema de respuesta SOS en procariotas[cite: 1]?</div>
+            <div class="options">
+                <label><input type="radio" name="p7" value="a"> A) Reparar de manera específica los dímeros de timina sin cortar ADN[cite: 1]</label>
+                <label><input type="radio" name="p7" value="b"> B) Sistema de emergencia que activa más de 60 genes mediante RecA y LexA ante un ataque masivo[cite: 1]</label>
+                <label><input type="radio" name="p7" value="c"> C) Mantener la estabilidad de los telómeros en eucariotas[cite: 1]</label>
+                <label><input type="radio" name="p7" value="d"> D) Replicar plásmidos de resistencia a antibióticos exclusivamente[cite: 1]</label>
+            </div>
+            <div id="fb-p7" class="feedback"></div>
+        </div>
+
+        <button type="button" class="btn" onclick="calificarQuiz()">Calificar Examen</button>
+    </form>
+
+    <div id="results">
+        <h2 id="scoreText"></h2>
+        <p id="recommendation"></p>
+    </div>
+</div>
+
+<script>
+    function calificarQuiz() {
+        const respuestasCorrectas = {
+            p1: 'b', // Fotorreactivación
+            p2: 'b', // Alquiltransferencia
+            p3: 'c', // BER
+            p4: 'b', // Xeroderma pigmentoso
+            p5: 'a', // MMR
+            p6: 'b', // HR
+            p7: 'b'  // Respuesta SOS
+        };
+
+        let aciertos = 0;
+        const total = Object.keys(respuestasCorrectas).length;
+
+        for (let pregunta in respuestasCorrectas) {
+            const seleccionada = document.querySelector(
