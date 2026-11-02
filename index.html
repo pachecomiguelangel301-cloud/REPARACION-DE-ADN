@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Parcial Interactivo: Mecanismos de Reparación del ADN</title>
+    <title>Simulacro Parcial Extendido: Mecanismos de Reparación del ADN</title>
     <style>
         :root {
             --bg-color: #121212;
@@ -27,7 +27,7 @@
         }
 
         .container {
-            max-width: 800px;
+            max-width: 850px;
             margin: 0 auto;
             background: var(--card-bg);
             padding: 30px;
@@ -59,7 +59,7 @@
 
         .question-title {
             font-weight: 600;
-            font-size: 1.1rem;
+            font-size: 1.05rem;
             margin-bottom: 15px;
         }
 
@@ -72,6 +72,7 @@
             cursor: pointer;
             border: 1px solid transparent;
             transition: all 0.2s;
+            font-size: 0.95rem;
         }
 
         .options label:hover {
@@ -113,9 +114,9 @@
         }
 
         .feedback {
-            font-size: 0.9rem;
-            margin-top: 8px;
-            padding: 8px;
+            font-size: 0.85rem;
+            margin-top: 10px;
+            padding: 10px;
             border-radius: 4px;
             display: none;
         }
@@ -136,96 +137,252 @@
 <body>
 
 <div class="container">
-    <h1>Simulacro Parcial: Reparación del ADN</h1>
+    <h1>Simulacro Parcial Extendido: Reparación del ADN</h1>
     <div class="subtitle">Basado en Tafurt Cardona Y. & Marín Morales M.A. (Revista Biosalud 2014)[cite: 1]</div>
 
     <form id="quizForm">
         
         <!-- Pregunta 1 -->
         <div class="question-card">
-            <div class="question-title">1. ¿Qué mecanismo de reparación directa revierte dímeros de pirimidina inducidos por luz UV y se caracteriza por no existir en mamíferos placentarios[cite: 1]?</div>
+            <div class="question-title">1. ¿Qué característica principal define a los mecanismos de reparación DIRECTA frente a los indirectos[cite: 1]?</div>
             <div class="options">
-                <label><input type="radio" name="p1" value="a"> A) Alquiltransferencia[cite: 1]</label>
-                <label><input type="radio" name="p1" value="b"> B) Fotorreactivación[cite: 1]</label>
-                <label><input type="radio" name="p1" value="c"> C) Desmetilación oxidativa[cite: 1]</label>
-                <label><input type="radio" name="p1" value="d"> D) NER (Escisión de nucleótidos)[cite: 1]</label>
+                <label><input type="radio" name="p1" value="a"> A) Cortan la cadena de ADN y la resintetizan usando la hebra complementaria[cite: 1]</label>
+                <label><input type="radio" name="p1" value="b"> B) Una sola enzima revierte la lesión directamente en el ADN sin necesidad de cortarlo[cite: 1]</label>
+                <label><input type="radio" name="p1" value="c"> C) Actúan exclusivamente durante la fase G₂ del ciclo celular[cite: 1]</label>
+                <label><input type="radio" name="p1" value="d"> D) Requieren obligatoriamente la proteína RAD51 para funcionar[cite: 1]</label>
             </div>
             <div id="fb-p1" class="feedback"></div>
         </div>
 
         <!-- Pregunta 2 -->
         <div class="question-card">
-            <div class="question-title">2. ¿Cuál enzima actúa como enzima "suicida" (MGMT), transfiriendo el grupo metilo de la O⁶-metilguanina a una cisteína para inactivarse[cite: 1]?</div>
+            <div class="question-title">2. En la Fotorreactivación, ¿qué enzima rompe los dímeros de pirimidina utilizando luz visible, y cuál es su distribución en mamíferos[cite: 1]?</div>
             <div class="options">
-                <label><input type="radio" name="p2" value="a"> A) Fotoliasa[cite: 1]</label>
-                <label><input type="radio" name="p2" value="b"> B) Alquiltransferencia[cite: 1]</label>
-                <label><input type="radio" name="p2" value="c"> C) Glicosilasa[cite: 1]</label>
-                <label><input type="radio" name="p2" value="d"> D) Ligasa IV[cite: 1]</label>
+                <label><input type="radio" name="p2" value="a"> A) Enzima MGMT; presente en todos los mamíferos[cite: 1]</label>
+                <label><input type="radio" name="p2" value="b"> B) Fotoliasa; no existe en mamíferos placentarios[cite: 1]</label>
+                <label><input type="radio" name="p2" value="c"> C) AlkB; exclusiva de células humanas[cite: 1]</label>
+                <label><input type="radio" name="p2" value="d"> D) Glicosilasa; activa en mamíferos placentarios ante luz UV[cite: 1]</label>
             </div>
             <div id="fb-p2" class="feedback"></div>
         </div>
 
         <!-- Pregunta 3 -->
         <div class="question-card">
-            <div class="question-title">3. ¿Qué vía de reparación indirecta elimina una sola base dañada mediante una glicosilasa y genera sitios AP (apirimidínicos/apurínicos)[cite: 1]?</div>
+            <div class="question-title">3. ¿Cómo actúa la enzima Alquiltransferencia (como la MGMT) durante la reparación de lesiones alquiladas[cite: 1]?</div>
             <div class="options">
-                <label><input type="radio" name="p3" value="a"> A) MMR[cite: 1]</label>
-                <label><input type="radio" name="p3" value="b"> C) NER[cite: 1]</label>
-                <label><input type="radio" name="p3" value="c"> C) BER (Escisión de bases)[cite: 1]</label>
-                <label><input type="radio" name="p3" value="d"> D) NHEJ[cite: 1]</label>
+                <label><input type="radio" name="p3" value="a"> A) Corta un segmento de 30 nucleótidos alrededor de la O⁶-metilguanina[cite: 1]</label>
+                <label><input type="radio" name="p3" value="b"> B) Funciona como enzima "suicida", transfiriendo el grupo metilo a una cisteína propia quedando inactiva[cite: 1]</label>
+                <label><input type="radio" name="p3" value="c"> C) Libera el grupo metilo directamente en forma de formaldehído gaseoso[cite: 1]</label>
+                <label><input type="radio" name="p3" value="d"> D) Utiliza cofactores de luz visible para romper enlaces covalentes[cite: 1]</label>
             </div>
             <div id="fb-p3" class="feedback"></div>
         </div>
 
         <!-- Pregunta 4 -->
         <div class="question-card">
-            <div class="question-title">4. La deficiencia o fallas en el sistema NER (Escisión de nucleótidos) están clásicamente asociadas con patologías como[cite: 1]:</div>
+            <div class="question-title">4. ¿Qué enzimas participan en la desmetilación oxidativa quitando el metilo y liberándolo como formaldehído[cite: 1]?</div>
             <div class="options">
-                <label><input type="radio" name="p4" value="a"> A) Ataxia-telangiectasia[cite: 1]</label>
-                <label><input type="radio" name="p4" value="b"> B) Xeroderma pigmentoso y síndrome de Cockayne[cite: 1]</label>
-                <label><input type="radio" name="p4" value="c"> C) Anemia de Fanconi[cite: 1]</label>
-                <label><input type="radio" name="p4" value="d"> D) Fibrosis quística</label>
+                <label><input type="radio" name="p4" value="a"> A) AlkB (en <i>E. coli</i>) y ABH1, ABH2, ABH3 (en humanos)[cite: 1]</label>
+                <label><input type="radio" name="p4" value="b"> B) KU70 y KU80[cite: 1]</label>
+                <label><input type="radio" name="p4" value="c"> C) MutS y MutL[cite: 1]</label>
+                <label><input type="radio" name="p4" value="d"> D) RAD51 y RAD52[cite: 1]</label>
             </div>
             <div id="fb-p4" class="feedback"></div>
         </div>
 
         <!-- Pregunta 5 -->
         <div class="question-card">
-            <div class="question-title">5. ¿Qué mecanismo corrige bases desapareadas en la hebra recién sintetizada aumentando la fidelidad de replicación entre 20 y 400 veces[cite: 1]?</div>
+            <div class="question-title">5. ¿Cuál es la función principal de la vía BER (Escisión de bases) y cuántos sitios AP estimados maneja una célula al día[cite: 1]?</div>
             <div class="options">
-                <label><input type="radio" name="p5" value="a"> A) MMR (Apareamiento erróneo)[cite: 1]</label>
-                <label><input type="radio" name="p5" value="b"> B) Respuesta SOS[cite: 1]</label>
-                <label><input type="radio" name="p5" value="c"> C) HR (Recombinación homóloga)[cite: 1]</label>
-                <label><input type="radio" name="p5" value="d"> D) BER[cite: 1]</label>
+                <label><input type="radio" name="p5" value="a"> A) Elimina fragmentos grandes de 24-32 nucleótidos; 100 sitios AP/día[cite: 1]</label>
+                <label><input type="radio" name="p5" value="b"> B) Elimina una sola base dañada mediante una glicosilasa, dejando un sitio AP; unos 10.000 sitios AP/día[cite: 1]</label>
+                <label><input type="radio" name="p5" value="c"> C) Corrige exclusivamente apareamientos erróneos de la replicación; 10⁵ sitios AP/día[cite: 1]</label>
+                <label><input type="radio" name="p5" value="d"> D) Repara quiebres de doble cadena sin usar moldes; 50 sitios AP/día[cite: 1]</label>
             </div>
             <div id="fb-p5" class="feedback"></div>
         </div>
 
         <!-- Pregunta 6 -->
         <div class="question-card">
-            <div class="question-title">6. Respecto a los quiebres en doble cadena (DSB), ¿cuál afirmación es correcta sobre la Recombinación Homóloga (HR)[cite: 1]?</div>
+            <div class="question-title">6. ¿Qué diferencia fundamental existe entre las dos subvías de NER (Escisión de nucleótidos): GGR y TCR[cite: 1]?</div>
             <div class="options">
-                <label><input type="radio" name="p6" value="a"> A) Es propensa a errores y une extremos directamente sin molde[cite: 1]</label>
-                <label><input type="radio" name="p6" value="b"> B) Es libre de errores, usa la cromátida hermana como molde y actúa sobre todo en fase G₂[cite: 1]</label>
-                <label><input type="radio" name="p6" value="c"> C) Ocurre exclusivamente en procariotas mediante proteínas RecA[cite: 1]</label>
-                <label><input type="radio" name="p6" value="d"> D) No requiere la proteína RAD51[cite: 1]</label>
+                <label><input type="radio" name="p6" value="a"> A) GGR actúa en todo el genoma de forma lenta; TCR está acoplada a la transcripción y es más eficiente[cite: 1]</label>
+                <label><input type="radio" name="p6" value="b"> B) TCR repara bases individuales y GGR repara quiebres de doble cadena exclusivamente[cite: 1]</label>
+                <label><input type="radio" name="p6" value="c"> C) GGR solo funciona en procariotas y TCR en eucariotas pluricelulares[cite: 1]</label>
+                <label><input type="radio" name="p6" value="d"> D) No existen diferencias funcionales, solo cambian las proteínas ligasa[cite: 1]</label>
             </div>
             <div id="fb-p6" class="feedback"></div>
         </div>
 
         <!-- Pregunta 7 -->
         <div class="question-card">
-            <div class="question-title">7. ¿Cuál es el rol principal del sistema de respuesta SOS en procariotas[cite: 1]?</div>
+            <div class="question-title">7. ¿Qué patologías severas se asocian comúnmente con fallas en el sistema NER[cite: 1]?</div>
             <div class="options">
-                <label><input type="radio" name="p7" value="a"> A) Reparar de manera específica los dímeros de timina sin cortar ADN[cite: 1]</label>
-                <label><input type="radio" name="p7" value="b"> B) Sistema de emergencia que activa más de 60 genes mediante RecA y LexA ante un ataque masivo[cite: 1]</label>
-                <label><input type="radio" name="p7" value="c"> C) Mantener la estabilidad de los telómeros en eucariotas[cite: 1]</label>
-                <label><input type="radio" name="p7" value="d"> D) Replicar plásmidos de resistencia a antibióticos exclusivamente[cite: 1]</label>
+                <label><input type="radio" name="p7" value="a"> A) Ataxia-telangiectasia y anemia de Fanconi[cite: 1]</label>
+                <label><input type="radio" name="p7" value="b"> B) Xeroderma pigmentoso, síndrome de Cockayne y cáncer[cite: 1]</label>
+                <label><input type="radio" name="p7" value="c"> C) Diabetes tipo 2 e hipertensión arterial sistémica[cite: 1]</label>
+                <label><input type="radio" name="p7" value="d"> D) Enfermedades por acumulación de formaldehído mitocondrial[cite: 1]</label>
             </div>
             <div id="fb-p7" class="feedback"></div>
         </div>
 
-        <button type="button" class="btn" onclick="calificarQuiz()">Calificar Examen</button>
+        <!-- Pregunta 8 -->
+        <div class="question-card">
+            <div class="question-title">8. ¿Cuál es el impacto del sistema MMR (Apareamiento erróneo) en la estabilidad genética celular[cite: 1]?</div>
+            <div class="options">
+                <label><input type="radio" name="p8" value="a"> A) Repara dímeros de pirimidina inducidos por radiación UV exclusivamente[cite: 1]</label>
+                <label><input type="radio" name="p8" value="b"> B) Aumenta la fidelidad de la replicación del ADN entre 20 y 400 veces[cite: 1]</label>
+                <label><input type="radio" name="p8" value="c"> C) Induce la respuesta SOS ante daños masivos por estrés oxidativo[cite: 1]</label>
+                <label><input type="radio" name="p8" value="d"> D) Une extremos de ADN roto sin requerir secuencias homólogas[cite: 1]</label>
+            </div>
+            <div id="fb-p8" class="feedback"></div>
+        </div>
+
+        <!-- Pregunta 9 -->
+        <div class="question-card">
+            <div class="question-title">9. ¿Qué complejos proteicos participan en la detección del sistema MMR en humanos y procariotas[cite: 1]?</div>
+            <div class="options">
+                <label><input type="radio" name="p9" value="a"> A) MSH2-MSH6 y MLH1-PMS2 (humanos); MutS/MutL (procariotas)[cite: 1]</label>
+                <label><input type="radio" name="p9" value="b"> B) KU70/KU80 y DNA-PKcs[cite: 1]</label>
+                <label><input type="radio" name="p9" value="c"> C) RecA y LexA[cite: 1]</label>
+                <label><input type="radio" name="p9" value="d"> D) MGMT y AlkB[cite: 1]</label>
+            </div>
+            <div id="fb-p9" class="feedback"></div>
+        </div>
+
+        <!-- Pregunta 10 -->
+        <div class="question-card">
+            <div class="question-title">10. ¿Por qué se consideran los quiebres en doble cadena (DSB) como el tipo de daño más severo para la célula[cite: 1]?</div>
+            <div class="options">
+                <label><input type="radio" name="p10" value="a"> A) Porque rompen covalentemente ambas hebras de la doble hélice, comprometiendo la integridad estructural y la información en ambos lados[cite: 1]</label>
+                <label><input type="radio" name="p10" value="b"> B) Porque solo ocurren debido a la luz visible en los cloroplastos[cite: 1]</label>
+                <label><input type="radio" name="p10" value="c"> C) Porque activan de forma irreversible la fotorreactivación en mamíferos[cite: 1]</label>
+                <label><input type="radio" name="p10" value="d"> D) Porque generan de forma inocua sitios AP sin riesgo mutagénico[cite: 1]</label>
+            </div>
+            <div id="fb-p10" class="feedback"></div>
+        </div>
+
+        <!-- Pregunta 11 -->
+        <div class="question-card">
+            <div class="question-title">11. ¿En qué fase del ciclo celular opera principalmente la Recombinación Homóloga (HR) y qué proteína clave utiliza como molde[cite: 1]?</div>
+            <div class="options">
+                <label><input type="radio" name="p11" value="a"> A) Fase M; utiliza proteínas KU70/KU80[cite: 1]</label>
+                <label><input type="radio" name="p11" value="b"> B) Fase G₂; utiliza la cromátida hermana como molde mediante proteínas como RAD51, RAD52 y MRN[cite: 1]</label>
+                <label><input type="radio" name="p11" value="c"> C) Fase G₁; une los extremos directamente sin importar la homología[cite: 1]</label>
+                <label><input type="radio" name="p11" value="d"> D) Fase S temprana; utiliza exclusivamente transcripción acoplada[cite: 1]</label>
+            </div>
+            <div id="fb-p11" class="feedback"></div>
+        </div>
+
+        <!-- Pregunta 12 -->
+        <div class="question-card">
+            <div class="question-title">12. ¿Qué patología se relaciona directamente con un defecto en la proteína ATM relacionada con la reparación de DSB[cite: 1]?</div>
+            <div class="options">
+                <label><input type="radio" name="p12" value="a"> A) Xeroderma pigmentoso[cite: 1]</label>
+                <label><input type="radio" name="p12" value="b"> B) Síndrome de Cockayne[cite: 1]</label>
+                <label><input type="radio" name="p12" value="c"> C) Ataxia-telangiectasia[cite: 1]</label>
+                <label><input type="radio" name="p12" value="d"> D) Cáncer colorrectal hereditario no polipósico[cite: 1]</label>
+            </div>
+            <div id="fb-p12" class="feedback"></div>
+        </div>
+
+        <!-- Pregunta 13 -->
+        <div class="question-card">
+            <div class="question-title">13. ¿Cuáles son las principales características del mecanismo NHEJ (Unión de extremos no homólogos)[cite: 1]?</div>
+            <div class="options">
+                <label><input type="radio" name="p13" value="a"> A) Es altamente fiel, usa cromátidas hermanas y es lenta[cite: 1]</label>
+                <label><input type="radio" name="p13" value="b"> B) Es propensa a errores, une extremos directamente sin secuencia homóloga (con KU70/KU80, DNA-PKcs, ligasa IV/XRCC4) y es muy eficiente en humanos[cite: 1]</label>
+                <label><input type="radio" name="p13" value="c"> C) Solo ocurre en ausencia total de quiebres cromosómicos[cite: 1]</label>
+                <label><input type="radio" name="p13" value="d"> D) Requiere luz UV obligatoriamente para activar sus ligasas[cite: 1]</label>
+            </div>
+            <div id="fb-p13" class="feedback"></div>
+        </div>
+
+        <!-- Pregunta 14 -->
+        <div class="question-card">
+            <div class="question-title">14. ¿Qué componentes moleculares y detonantes caracterizan la Respuesta SOS en procariotas[cite: 1]?</div>
+            <div class="options">
+                <label><input type="radio" name="p14" value="a"> A) Sistema de emergencia activado por ataque masivo al ADN (luz UV, ROS) mediante RecA (activador) y LexA (represor) para más de 60 genes[cite: 1]</label>
+                <label><input type="radio" name="p14" value="b"> B) Sistema de fotorreactivación enzimática dependiente de mamíferos placentarios[cite: 1]</label>
+                <label><input type="radio" name="p14" value="c"> C) Sistema de control de apareamiento erróneo basado exclusivamente en MSH2[cite: 1]</label>
+                <label><input type="radio" name="p14" value="d"> D) Mecanismo de desmetilación oxidativa mediado por AlkB en eucariotas[cite: 1]</label>
+            </div>
+            <div id="fb-p14" class="feedback"></div>
+        </div>
+
+        <!-- Pregunta 15 -->
+        <div class="question-card">
+            <div class="question-title">15. De acuerdo con el resumen del documento, ¿cuántas lesiones espontáneas sufre aproximadamente cada célula por día y qué demuestra esto[cite: 1]?</div>
+            <div class="options">
+                <label><input type="radio" name="p15" value="a"> A) Hasta 10³ lesiones; demuestra la alta tasa de mutación espontánea inalterable[cite: 1]</label>
+                <label><input type="radio" name="p15" value="b"> B) Hasta 10⁵ lesiones; la baja tasa de mutación real refleja la alta eficiencia de los sistemas de reparación[cite: 1]</label>
+                <label><input type="radio" name="p15" value="c"> C) Exactamente 10.000 sitios AP; equivalente a las fallas de la polimerasa[cite: 1]</label>
+                <label><input type="radio" name="p15" value="d"> D) Ninguna lesión, ya que el ADN está protegido por histonas en fase S[cite: 1]</label>
+            </div>
+            <div id="fb-p15" class="feedback"></div>
+        </div>
+
+        <!-- NUEVA PREGUNTA 16 -->
+        <div class="question-card">
+            <div class="question-title">16. ¿Qué longitud aproximada de nucleótidos elimina el sistema NER (Escisión de nucleótidos) cuando actúa sobre una lesión que distorsiona la hélice[cite: 1]?</div>
+            <div class="options">
+                <label><input type="radio" name="p16" value="a"> A) Exactamente 1 nucleótido (reparación monomérica)[cite: 1]</label>
+                <label><input type="radio" name="p16" value="b"> B) De 24 a 32 nucleótidos[cite: 1]</label>
+                <label><input type="radio" name="p16" value="c"> C) Entre 200 y 400 nucleótidos mediante cromátida hermana[cite: 1]</label>
+                <label><input type="radio" name="p16" value="d"> D) Toda la hebra afectada de extremo a extremo[cite: 1]</label>
+            </div>
+            <div id="fb-p16" class="feedback"></div>
+        </div>
+
+        <!-- NUEVA PREGUNTA 17 -->
+        <div class="question-card">
+            <div class="question-title">17. ¿Qué consecuencias o riesgos ocurren si los sitios AP generados por BER no son reparados adecuadamente[cite: 1]?</div>
+            <div class="options">
+                <label><input type="radio" name="p17" value="a"> A) Bloquean la replicación y la transcripción, resultando altamente mutagénicos[cite: 1]</label>
+                <label><input type="radio" name="p17" value="b"> B) Activan de inmediato la respuesta SOS de manera inocua[cite: 1]</label>
+                <label><input type="radio" name="p17" value="c"> C) Inducen la producción automática de la enzima MGMT[cite: 1]</label>
+                <label><input type="radio" name="p17" value="d"> D) No generan ningún problema porque la célula los tolera sin replicar[cite: 1]</label>
+            </div>
+            <div id="fb-p17" class="feedback"></div>
+        </div>
+
+        <!-- NUEVA PREGUNTA 18 -->
+        <div class="question-card">
+            <div class="question-title">18. ¿Bajo qué circunstancias específicas se activa principalmente la vía de Desmetilación Oxidativa celular[cite: 1]?</div>
+            <div class="options">
+                <label><input type="radio" name="p18" value="a"> A) Únicamente durante la exposición directa a luz ultravioleta de 250-320 nm[cite: 1]</label>
+                <label><input type="radio" name="p18" value="b"> B) Ante estrés oxidativo, inflamación, peroxidación de lípidos, infecciones o alteración de la microbiota[cite: 1]</label>
+                <label><input type="radio" name="p18" value="c"> C) Exclusivamente cuando hay errores masivos de apareamiento en la fase S[cite: 1]</label>
+                <label><input type="radio" name="p18" value="d"> D) Cuando se produce un quiebre de doble cadena por radiación ionizante[cite: 1]</label>
+            </div>
+            <div id="fb-p18" class="feedback"></div>
+        </div>
+
+        <!-- NUEVA PREGUNTA 19 -->
+        <div class="question-card">
+            <div class="question-title">19. ¿Cuál es el riesgo principal asociado a un funcionamiento defectuoso del sistema NHEJ (Unión de extremos no homólogos)[cite: 1]?</div>
+            <div class="options">
+                <label><input type="radio" name="p19" value="a"> A) Bloqueo total de la división celular sin riesgo de mutación[cite: 1]</label>
+                <label><input type="radio" name="p19" value="b"> B) Puede causar rearreglos cromosómicos debido a su naturaleza propensa a errores[cite: 1]</label>
+                <label><input type="radio" name="p19" value="c"> C) Pérdida permanente de la capacidad de sintetizar proteínas ribosomales[cite: 1]</label>
+                <label><input type="radio" name="p19" value="d"> D) Conversión automática de la célula en procariota[cite: 1]</label>
+            </div>
+            <div id="fb-p19" class="feedback"></div>
+        </div>
+
+        <!-- NUEVA PREGUNTA 20 -->
+        <div class="question-card">
+            <div class="question-title">20. De acuerdo con la sección "Para recordar", ¿cómo se diferencian fundamentalmente BER, NER y MMR en cuanto a su sustrato o diana[cite: 1]?</div>
+            <div class="options">
+                <label><input type="radio" name="p20" value="a"> A) BER repara una base; NER repara un fragmento que distorsiona la hélice; MMR repara errores de apareamiento[cite: 1]</label>
+                <label><input type="radio" name="p20" value="b"> B) BER repara quiebres de doble cadena; NER repara metilaciones; MMR repara luz UV[cite: 1]</label>
+                <label><input type="radio" name="p20" value="c"> C) Las tres vías hacen exactamente lo mismo pero en diferentes especies animales[cite: 1]</label>
+                <label><input type="radio" name="p20" value="d"> D) MMR repara una base, BER repara fragmentos largos y NER repara apareamientos erróneos[cite: 1]</label>
+            </div>
+            <div id="fb-p20" class="feedback"></div>
+        </div>
+
+        <button type="button" class="btn" onclick="calificarQuiz()">Calificar Examen Completo (20 Preguntas)</button>
     </form>
 
     <div id="results">
@@ -237,17 +394,64 @@
 <script>
     function calificarQuiz() {
         const respuestasCorrectas = {
-            p1: 'b', // Fotorreactivación
-            p2: 'b', // Alquiltransferencia
-            p3: 'c', // BER
-            p4: 'b', // Xeroderma pigmentoso
-            p5: 'a', // MMR
-            p6: 'b', // HR
-            p7: 'b'  // Respuesta SOS
+            p1: 'b', // Una sola enzima revierte la lesión directamente...
+            p2: 'b', // Fotoliasa; no existe en mamíferos placentarios
+            p3: 'b', // Enzima suicida, transfiere metilo a cisteína
+            p4: 'a', // AlkB y ABH1, ABH2, ABH3
+            p5: 'b', // BER elimina una sola base, 10.000 sitios AP/día
+            p6: 'a', // GGR genoma global lenta, TCR acoplada transcripción eficiente
+            p7: 'b', // Xeroderma pigmentoso, síndrome de Cockayne y cáncer
+            p8: 'b', // Aumenta fidelidad de replicación 20-400 veces
+            p9: 'a', // MSH2-MSH6, MLH1-PMS2 / MutS-MutL
+            p10: 'a',// Rompen covalentemente ambas hebras
+            p11: 'b',// Fase G2, cromátida hermana, RAD51, RAD52, MRN
+            p12: 'c',// Ataxia-telangiectasia
+            p13: 'b',// Propensa a errores, une extremos directamente (KU70/KU80...)
+            p14: 'a',// Sistema de emergencia, ataque masivo, RecA y LexA
+            p15: 'b',// Hasta 10^5 lesiones, baja tasa de mutación refleja eficiencia
+            p16: 'b',// De 24 a 32 nucleótidos
+            p17: 'a',// Bloquean replicación/transcripción, mutagénicos
+            p18: 'b',// Estrés oxidativo, inflamación, peroxidación, infecciones...
+            p19: 'b',// Puede causar rearreglos cromosómicos
+            p20: 'a' // BER repara una base; NER repara fragmento; MMR errores de apareamiento
         };
 
         let aciertos = 0;
         const total = Object.keys(respuestasCorrectas).length;
 
         for (let pregunta in respuestasCorrectas) {
-            const seleccionada = document.querySelector(
+            const seleccionada = document.querySelector(`input[name="${pregunta}"]:checked`);
+            const fbElement = document.getElementById(`fb-${pregunta}`);
+            fbElement.style.display = 'block';
+
+            if (seleccionada && seleccionada.value === respuestasCorrectas[pregunta]) {
+                aciertos++;
+                fbElement.textContent = "¡Correcto! Respuesta acertada según el artículo.";
+                fbElement.className = "feedback correct-feedback";
+            } else {
+                fbElement.textContent = "Incorrecto. Repasa la tabla y conceptos del documento base.";
+                fbElement.className = "feedback incorrect-feedback";
+            }
+        }
+
+        const resultsDiv = document.getElementById('results');
+        const scoreText = document.getElementById('scoreText');
+        const recommendation = document.getElementById('recommendation');
+
+        resultsDiv.style.display = 'block';
+        scoreText.textContent = `Tu calificación: ${aciertos} de ${total} (${Math.round((aciertos/total)*100)}%)`;
+
+        if (aciertos === total) {
+            recommendation.textContent = "¡Puntuación perfecta! Tienes dominio total y absoluto sobre los mecanismos de reparación del ADN.";
+        } else if (aciertos >= total * 0.8) {
+            recommendation.textContent = "¡Muy buen trabajo! Tienes bases muy sólidas, solo repasa los detalles específicos que fallaste.";
+        } else {
+            recommendation.textContent = "Te sugiero repasar detenidamente las diferencias entre reparación directa e indirecta, así como HR frente a NHEJ.";
+        }
+        
+        resultsDiv.scrollIntoView({ behavior: 'smooth' });
+    }
+</script>
+
+</body>
+</html>
